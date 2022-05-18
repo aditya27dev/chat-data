@@ -1,0 +1,15 @@
+WITH "https://raw.githubusercontent.com/aditya27dev/chat-data/main/chat_respond_team_chat.csv" AS uri
+LOAD CSV WITH HEADERS FROM uri AS chatRespondRow
+RETURN chatRespondRow
+
+WITH "https://raw.githubusercontent.com/aditya27dev/chat-data/main/chat_mention_team_chat.csv" AS uri
+LOAD CSV WITH HEADERS FROM uri AS chatMentionRow
+RETURN chatMentionRow
+
+WITH "https://raw.githubusercontent.com/aditya27dev/chat-data/main/chat_leave_team_chat.csv" AS uri
+LOAD CSV WITH HEADERS FROM uri AS chatLeaveRow
+RETURN chatLeaveRow
+
+WITH "https://raw.githubusercontent.com/aditya27dev/chat-data/main/chat_join_team_chat.csv" AS uri
+LOAD CSV WITH HEADERS FROM uri AS chatJoinRow
+RETURN chatJoinRow
